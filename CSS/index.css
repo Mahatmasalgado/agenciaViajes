@@ -397,3 +397,56 @@ span.material-symbols-outlined {
     line-height: 28px;
     margin-bottom: 16px;
 }
+
+/*! Medidias para tablet */
+
+@media (max-width: 768px){ 
+
+    .encabezado{
+        margin: 0 5rem;
+    }
+    
+    .banner__descripcion{
+        font-size: 20px;
+        margin: 7rem 5rem;
+    }
+
+    .ofertas__cards--grupo{
+        padding: 0 5rem;
+    }
+    .ofertas__cards--elemento{
+        padding: 0 32px;
+    }
+
+    .busca__categorias{
+        flex-wrap: wrap;
+        margin: 11.2rem 5rem;
+    }
+    .busca__categoria{
+        flex-basis: calc(50% - 48px);
+        border-radius: 18px;
+    }
+    .destinos__lista{
+        flex-direction: column;
+        margin: 0 5rem 11.2rem 5rem;
+    }
+
+    .pago{
+        margin: 0 5rem 11.2rem 5rem;
+    }
+
+    .pago__condiciones{
+        flex-direction: column;
+    }
+
+    .testimonios{
+        margin: 0 5rem 11.2rem 5rem;
+    }
+    .testimonios__wrapper{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
