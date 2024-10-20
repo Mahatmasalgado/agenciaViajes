@@ -1,5 +1,19 @@
+
+/*? GLOBALES */
+.none {
+    display: none;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
 /*? Header */
 
+.encabezado{
+    width: 90%;
+}
 .encabezado__container {
     background: var(--negro);
     width: 100%;
@@ -50,6 +64,7 @@
 
 .banner__descripcion {
     max-width: 1200px;
+    width: 90%;
     color: var(--grafito, #222);
     text-align: center;
     font-size: 32px;
@@ -64,6 +79,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
 }
 
 /*? OFERTAS */
@@ -202,6 +218,7 @@ img {
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
+    flex-wrap: wrap;
 }
 
 .busca__categoria {
@@ -398,17 +415,12 @@ span.material-symbols-outlined {
     margin-bottom: 16px;
 }
 
-/*! Medidias para tablet */
+/*! Medidas para tablet */
 
 @media (max-width: 768px){ 
-
-    .encabezado{
-        margin: 0 5rem;
-    }
     
     .banner__descripcion{
         font-size: 20px;
-        margin: 7rem 5rem;
     }
 
     .ofertas__cards--grupo{
@@ -418,35 +430,37 @@ span.material-symbols-outlined {
         padding: 0 32px;
     }
 
-    .busca__categorias{
-        flex-wrap: wrap;
-        margin: 11.2rem 5rem;
-    }
+
     .busca__categoria{
         flex-basis: calc(50% - 48px);
         border-radius: 18px;
     }
     .destinos__lista{
         flex-direction: column;
-        margin: 0 5rem 11.2rem 5rem;
     }
 
-    .pago{
-        margin: 0 5rem 11.2rem 5rem;
-    }
+
 
     .pago__condiciones{
         flex-direction: column;
     }
 
-    .testimonios{
-        margin: 0 5rem 11.2rem 5rem;
-    }
     .testimonios__wrapper{
         flex-direction: column;
     }
     .footer{
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/*! Para celular */
+@media (max-width: 430px){ 
+    .ofertas__cards--grupo{
+        padding: 0 0.5rem;
+    }
+
+    .busca__categoria{
+        flex-basis: 100%;
     }
 }
