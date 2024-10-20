@@ -6,13 +6,13 @@ window.addEventListener('resize', function() {
     
 
     // Aplica diferentes acciones dependiendo del ancho de la ventana
-    if (width <= 430){
+    if (width <= 450){
         console.log('Pantalla celular');
         //cambiamos logo
         const logo = document.querySelector(".encabezado__logo--icono");
         logo.src = "../img/Logo-pequenio.png";
     }
-    
+
     if (width <= 768) {
         console.log('Pantalla de tablet');
         // obtenemos lista nav
