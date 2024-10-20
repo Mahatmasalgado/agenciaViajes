@@ -11,7 +11,9 @@ window.addEventListener('resize', function() {
         //cambiamos logo
         const logo = document.querySelector(".encabezado__logo--icono");
         logo.src = "../img/Logo-pequenio.png";
-    }else if (width <= 768 && width > 430) {
+    }
+    
+    if (width <= 768) {
         console.log('Pantalla de tablet');
         // obtenemos lista nav
         const menu = document.querySelector(".encabezado__navegacion--menu");
